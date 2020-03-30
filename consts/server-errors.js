@@ -1,0 +1,191 @@
+'use strict';
+
+module.exports = {
+  GENERAL: {
+    CAN_NOT_CHANGE_CREATOR_ROLE: 'Creator role is not changeable',
+    CAN_NOT_CHANGE_CREATOR: 'Creator is not changeable',
+    CAN_NOT_CHANGE_USER_ROLE: 'User role is not changeable',
+    CAN_NOT_CHANGE_DATA_SOURCE_TYPE: 'Data source type is not changeable',
+    MESSAGE_REQUIRED: 'Message is required',
+    FILTER_REQUIRED: 'Filter is required',
+    NOT_ALLOWED_DATE_TIME_FORMAT: 'Not allowed date time format',
+    NOT_ALLOWED_EMPTY_SELECTION: 'Empty selection not allowed.',
+    NOT_ALLOWED_SUB_DAY: 'Not allowed sub day',
+    QUERY_REQUIRED: 'Query is required',
+    INCORRECT_LIMIT: 'Incorrect limit',
+    GEO_NOT_EXIST: 'Missing latitude and longitude',
+    NOT_ALLOWED_TIME_ZONE: 'Not allowed time zone',
+    UNKNOWN_KEY: 'Unknown key',
+    RECAPTCHA_FAILED: 'Recaptcha failed',
+    MISSING_VALUE: 'Missing value',
+    INVALID_ID: 'Invalid id',
+    SESSION_NOT_FOUND: 'Session is not found'
+  },
+  EXTERNAL: {
+    COMMON_ERROR: 'External service error',
+    ENERGYCAP_AUTHENTICATION_ERROR: 'EnergyCap Authentication Error'
+  },
+  TAG: {
+    CAN_NOT_CHANGE_TAG_TYPE: 'Tag type is not changeable',
+    NOT_ALLOWED_NODE_TYPE: 'Not allowed node type',
+    NOT_ALLOWED_SUMMARY_METHOD: 'Not allowed summary method',
+    CAN_NOT_CREATE_TAG: 'User has no permission to create Tags',
+    CAN_NOT_EDIT_TAG: 'User has no permission to edit Tags',
+    CAN_NOT_DELETE_TAG: 'User has no permission to delete Tags',
+    TAG_DOES_NOT_EXIST: 'Tag with requested ID does not exist: ',
+    NOT_FOUND_SENSOR_IN_PARENTS: 'Not found Sensor in parents',
+    INVALID_TAG_TYPE: 'Invalid Tag Type',
+    ONLY_BP_CAN_DELETE_TAG: 'Only a BP can delete a Tag with this tagType',
+    TAG_IS_BEING_USED: 'Tag is being used and therefore cannot be deleted',
+    REQUIRED_METRIC_SUMMARY_METHOD: 'Summary method is required',
+    NOT_ALLOWED_TAG_TYPES_RELATIONSHIP:
+      'Rule engine does not allow connecting supplied child tagType and parent tagType',
+    MISSING_ENTITY_ID: 'Missing Entity ID',
+    ERROR_IN_OBJECT_BINDING_PAIR: 'An error occurred while attempting to retrieve object binding pair',
+    INVALID_ENTITY_TYPE: 'Invalid Entity type requested; Type should be an App Entity ' +
+      '(e.g., \'Dashboard\', \'Presentation\') or a User Entity (i.e., \'User\'.',
+    CAN_NOT_UPLOAD_FILE: 'You have no permission to upload file',
+    NOT_UNIQUE_DEVICE_ID: 'DeviceID must be unique',
+    SCOPE_USES_AUTH: 'Scope uses auth. Please input username and password',
+    RULE: {
+      CAN_NOT_CHANGE_RULE_TYPE: 'Rule type is not changeable',
+      NOT_ALLOWED_RULE_TYPE: 'Not allowed rule type',
+      CAN_NOT_CREATE_RULE: 'You can not create Rule',
+      CAN_NOT_EDIT_RULE: 'You can not edit Rule',
+      CAN_NOT_DELETE_RULE: 'You can not delete Rule',
+      CAN_NOT_DELETE_RESERVED_RULE: 'You can not delete reserved Rule',
+      ONLY_BP_CAN_DELETE_RULE: 'Only BP can delete that rule',
+      RULE_NOT_EXISTS: 'Rule does not exist: ',
+      DUPLICATE_RULE_TYPE: 'Duplicate role type'
+    },
+    SCHEDULE: {
+      ONLY_BP_CAN_SAVE_TAG_SCHEDULE: 'Only a BP can save this tag schedule',
+      ONLY_BP_CAN_DELETE_TAG_SCHEDULE: 'Only a BP can delete this tag schedule',
+      TAG_SCHEDULE_DOES_NOT_EXIST: 'Tag schedule with requested ID does not exist: ',
+      MIN_IS_MORE_OR_EQUAL_MAX: 'heatSetpoint should be less than coolSetpoint',
+      FROM_SHOULD_BE_LESS_TO: 'In equals hours fromMinute should be less toMinute'
+    },
+    STATE: {
+      TAG_STATE_DOES_NOT_EXIST: 'Tag state with requested ID does not exist: ',
+      DEVICE_ID_REQUIRED: 'Device ID is required.',
+      TAG_WITH_DEVICE_ID_NOT_EXISTS: 'Tag with requested Device ID does not exist: ',
+      LOGCAT_LINK_REQUIRED: 'Please specify link.',
+      VALID_DATATYPE_REQUIRED: 'Valid dataType parameter is required for this API.',
+      TAG_OR_DEVICE_ID_REQUIRED: 'Please specify either tagId or deviceId.'
+    }
+  },
+  ACCOUNT: {
+    SF_ACCOUNT_REQUIRED: 'Salesforce Account Id is required',
+    INCORRECT_CREATE_ACCOUNT_BODY: 'Please specify user and account objects',
+    INCORRECT_ACCOUNTS_IDS: 'At least one unique Account Id is required',
+    CAN_NOT_ASSOCIATE_BP_WITH_ACCOUNT: 'You can not associate BP with Account',
+    UNKNOWN_SF_ACCOUNT: 'Unknown SFDC Account',
+    INCORRECT_SF_ACCOUNT_ID: 'Incorrect SF Account Id',
+    SF_CONTACT_ASSOCIATED_WITH_DIFFERENT_SF_ACCOUNT: 'SF Contact associated with different SF Account',
+    CAN_NOT_CREATE_ACCOUNT: 'You can not create accounts',
+    ACCOUNT_REQUIRED_FOR_UPLOADING_USER_PICTURE:
+      'You should be assigned with account for uploading profile picture',
+    ACCOUNT_NOT_EXISTS: 'Account not exists: ',
+    UNKNOWN_UTILITY_PROVIDER: 'Unknown Utility Provider',
+    CAN_NOT_CHANGE_SFDC_ACCOUNT: 'SFDC Account Id is not changeable',
+    CAN_NOT_EDIT_ACCOUNT: 'You can not edit accounts',
+  },
+  USER: {
+    INCORRECT_LOGIN_OR_PASSWORD: 'Incorrect login or password',
+    NOT_ALLOWED_USER_ROLE: 'Not allowed user role',
+    INCORRECT_REQUEST: 'Incorrect request',
+    EMAIL_REQUIRED: 'Email is required',
+    PASSWORD_REQUIRED: 'Password is required',
+    CAN_NOT_DELETE_BP: 'Yo can not delete Brightergy employee',
+    CAN_NOT_DELETE_USERS: 'You can not delete users',
+    CAN_NOT_DELETE_YOURSELF: 'You can not delete yourself',
+    CAN_NOT_EDIT_ACCESSIBLE_APPLICATIONS: 'You can not edit accessible applications',
+    REQUIRED_BP_ROLE: 'User should have BP Role',
+    CAN_NOT_REGISTER_BP_USERS: 'You can not register BP users',
+    CAN_NOT_REGISTER_USERS: 'You can not register users',
+    CAN_NOT_EDIT_BP: 'You can not edit Brightergy employee',
+    INCORRECT_OR_EXPIRED_TOKEN: 'Incorrect or expired token',
+    PASSWORD_HAS_BEEN_USED: 'Please choose a password you haven\'t previously used with this account',
+    UNEXPECTED_ONEALL_RESPONSE: 'Unexpected oneall response',
+    NOT_LINKED_SOCIAL_NETWORK: 'You are not linked social network with your account',
+    INCORRECT_EMAIL: 'Incorrect email',
+    INCORRECT_SESSION: 'Incorrect session',
+    CAN_NOT_REGISTER_BP: 'You can not register Brightergy employee',
+    USER_TAGS_NOT_FOUND: 'Not found user accessible tags',
+    USER_NOT_EXISTS: 'User not exists',
+    NO_BP_USER_TO_LOGININ: 'No BP user to login',
+    NOT_ALLOWED_DEFAULT_APP: 'Not allowed default app',
+    NOT_UNIQUE_APPS: 'Accessible apps must be unique',
+    NOT_ALLOWED_APP: 'Not allowed app',
+    UNKNOWN_ENPHASE_USER_ID: 'Unknown enphase user Id',
+    CAN_NOT_USE_EXISTING_SF_CONTACT: 'You can not use existing Salesforce Contact',
+    LIMIT_PARAM_REQUIRED: 'Parameter limit is required for pagination',
+    NO_PERMISSION_FOR_UTILITIES: 'No permission for Utilities',
+    USER_NOT_FOUND: 'User is not found'
+  },
+  DASHBOARD: {
+    DASHBOARD_LINK_REQUIRED: 'Dashboard link is required',
+    MISSING_DAASHBOARD_ID: 'Missing dashboard Id',
+    DASHBOARD_NOT_ACCESSIBLE: 'Dashboard are not accessible for you',
+    ONLY_BP_CAN_SAVE_DASHBOARD: 'Only BP can save that Dashboard',
+    NOT_ACCESSIBLE_ANALYZE_APP: 'You do not have access to Analyze application',
+    INCORRECT_DASHBOARD_ID: 'Incorrect dashboard Id or dashboard has been deleted: ',
+    CAN_NOT_DELETE_DASHBOARD: 'You can not delete dashboard',
+    DASHBOARD_NOT_EXISTS: 'Dashboard does not exists: ',
+    NOT_UNIQUE_COLLECTIONS: 'Collections must be unique for dashboard',
+    INCORRECT_DATA_RANGE: 'Start date should be less than or equal to end date',
+    CAN_NOT_MARK_PRIVATE_DASHBOARD: 'You can not mark this dashboard as private'
+  },
+  PRESENTATION: {
+    PRESENTATION_NAME_REQUIRED: 'Presentation name is required',
+    PRESENTATION_LINK_REQUIRED: 'Presentation link is required',
+    PRESENTATION_NOT_ACCESSIBLE: 'Presentation are not accessible for you',
+    NOT_ACCESSIBLE_PRESENT_APP: 'You do not have access to Present application',
+    ONLY_BP_CAN_ADD_PRESENTATION_EDITOR: 'Only BP can add presentation editor',
+    ONLY_BP_CAN_REMOVE_PRESENTATION_EDITOR: 'Only BP can remove presentation editor',
+    MISSING_PRESENTATION_ID: 'Missing presentation Id',
+    CAN_NOT_DELETE_PRESENTATION: 'You can not delete presentation',
+    PRESENTATION_NOT_EXISTS: 'Presentation does not exists: ',
+    PRESENTATION_TAGS_NOT_REGISTERED: 'Presentation tags have not registered',
+    PRESENTATION_TAGS_NOT_FOUND: 'Not found presentation tags',
+    PRESENT_DEVICE_DOES_NOT_EXIST: 'Present device with requested ID does not exist: ',
+    TEMPLATE_NOT_EXISTS: 'Template not exists',
+    INCORRECT_PRESENTATION_ID: 'Incorrect presentation Id or presentation has been deleted: '
+  },
+  WIDGET: {
+    WIDGET_NOT_EXISTS: 'Widget does not exists: ',
+    WIDGET_NOT_ADDED_TO_DASHBOARD: 'Widget not added to dashboard',
+    NOT_UNIQUE_DATA_SENSE_WIDGET_METRICS: 'Metric and compareMetric should be different',
+    UNKNOWN_BOILERPLATE_TYPE: 'Unknown boilerplate type',
+    METRIC_REQUIRED: 'Metric is required'
+  },
+  GROUP: {
+    GROUP_DOES_NOT_EXIST: 'Group with requested ID does not exist: ',
+    CAN_NOT_CREATE_GROUP: 'User has no permission to create Groups',
+    CAN_NOT_EDIT_GROUP: 'User has no permission to edit Groups',
+    CAN_NOT_DELETE_GROUP: 'User has no permission to delete Groups',
+    ONLY_BP_CAN_SAVE_GROUP: 'Only a BP can save a Group',
+    ONLY_BP_CAN_DELETE_GROUP: 'Only a BP can delete a Group'
+  },
+  ASSETS: {
+    CAN_NOT_UPLOAD_GENERAL_ASSETS: 'You can not upload general assets',
+    CAN_NOT_DELETE_GENERAL_ASSETS: 'You can not delete general assets',
+    UNKNOWN_AWS_ASSETS_KEY: 'Unknown AWS assets key prefix',
+    UNKNOWN_ASSETS_FOLDER_NAME: 'Unknown assets folder name',
+    UNKNOWN_ASSETS_FOLDER_ID: 'Unknown assets folder Id',
+    UNKNOWN_ASSETS_FILE_ID: 'Unknown assets file Id',
+    NOT_FOUND_ASSETS_FILE: 'Not found assets file',
+    UNKNOWN_FILE: 'Unknown file',
+    ASSETS_NOT_LOADED: 'Your Assets repository is being created, please wait...',
+    CAN_NOT_UPLOAD_ACCOUNT_ASSETS: 'You can not upload account assets',
+    CAN_NOT_DELETE_ACCOUNT_ASSETS: 'You can not delete account assets'
+  },
+  DEFAULT_MAPPING: {
+    DEFAULT_MAPPING_NOT_EXISTS: 'Default Mapping does not exists: ',
+    CAN_NOT_SAVE_DEFAULT_MAPPING: 'You can not save Default Mapping',
+    CAN_NOT_DELETE_DEFAULT_MAPPING: 'You can not delete Default Mapping'
+  },
+  UTILITIES: {
+    AUTHENTICATION_FAILD: 'Utilities: EnergyCap Authentication Failed.'
+  }
+};
